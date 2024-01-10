@@ -6,6 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Rez_de_chausse.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  m_configObjects: {}
+    path: Assets/Scenes/Bulles.unity
+    guid: 012df0d66157b39c6a9b8070ead4e0a7
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: eb56122266c328cb68d88360ca3f8c5f,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0170f7baef35e41558facba35cdab04e,
+      type: 2}
