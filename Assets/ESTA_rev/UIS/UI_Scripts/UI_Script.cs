@@ -17,7 +17,16 @@ public class UI_Script : MonoBehaviour
 
     public void Teleport()
     {
+        StartCoroutine(SceneTransitionTime());
+        //teleportationArea[currentButton].Teleport();
+
+    }
+
+    IEnumerator SceneTransitionTime()
+    {
+        yield return new WaitForSeconds(1f);
         teleportationArea[currentButton].Teleport();
+
     }
 
     public void GoToNextButton()
