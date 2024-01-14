@@ -17,8 +17,8 @@ public class UI_Script : MonoBehaviour
 
     public void Teleport()
     {
-        StartCoroutine(SceneTransitionTime());
-        //teleportationArea[currentButton].Teleport();
+        //StartCoroutine(SceneTransitionTime());
+        teleportationArea[currentButton].Teleport();
 
     }
 
