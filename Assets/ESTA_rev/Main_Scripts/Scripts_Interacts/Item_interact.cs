@@ -6,9 +6,8 @@ using TMPro;
 public class Item_interact : MonoBehaviour
 {
     public string name;
-    public bool isItemCheck;
-    public TextMeshProUGUI itemText;
-
+    public ParticleSystem explosionEffect;
+    
     public GameController gameController;
 
     public void CheckIfItem()
@@ -17,8 +16,17 @@ public class Item_interact : MonoBehaviour
         {
             if(name == itemName.text)
             {
+                gameController.itemCount++;
                 itemName.color = Color.green;
+                this.gameObject.SetActive(false);
+                Instantiate(explosionEffect, this.transform.position, explosionEffect.transform.rotation);
+
             }
+        }
+
+        if(gameController.itemCount == gameController.itemList.Count)
+        {
+            Debug.Log("Yeaah");
         }
 
     }

@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
 
     public static GameController Instance;
     public List<TextMeshProUGUI> itemList = new List<TextMeshProUGUI>();
+    [SerializeField] public int itemCount = 0;
 
 
     public void Awake()
@@ -20,5 +21,11 @@ public class GameController : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+
+    private void CheckForGameWin()
+    {
+
     }
 }
